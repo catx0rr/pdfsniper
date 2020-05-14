@@ -1,6 +1,6 @@
 # PDF Sniper 🏹
 
-## Extract 🧬 | Crack 🔓| Encrypt 🔐| Read 📖
+## Extract | Crack | Encrypt | Read 
 
 ---
 

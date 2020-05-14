@@ -6,7 +6,7 @@
 
 ## NOTES
 
-Feel free to use and modify this file. Documentations are listed [below](### DOCUMENTATIONS)
+Feel free to use and modify this file. Documentations are listed [below](#documentations)
 
 ### DEPENDECIES
 

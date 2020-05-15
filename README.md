@@ -10,15 +10,6 @@ Feel free to use and modify this file. Documentations are listed [below](#docume
 
 ### DEPENDECIES
 
-#### pdftotext module:
-
-Linux: libpoppler
-
-- ```$ sudo apt-get install libpoppler-cpp-dev```
-        
-Windows: Microsoft Visual C++ 14.0
-- [Get it with Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/downloads/)
-
 Python:
 - Required dependencies:
     - ```pip3 install PyPDF2```
@@ -26,14 +17,30 @@ Python:
     - ```pip3 install pikepdf```
     - ```pip3 install getpass```
 
-For Installation Issues in pikepdf:
-- Donwload Fix / Upgrade pip:
+
+For Installation Issues in required modules:
+- pikepdf module:
     - ```python3 -m pip install --upgrade pip```
     - ```python3 -m pip install pikepdf```
+
+- pdftotext module:
+    - ```sudo apt-get install libpoppler-cpp-dev```
+        
+Windows: Microsoft Visual C++ 14.0
+- [Get it with Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+
 
 ---
 
 ### UPDATES
+
+As of 15/05/2020
+
+- Changed parsing method
+- Added notification after reaching the end of line on password list
+- For sys.argv version please check for previous commits. 
+
+As of 14/05/2020
 - Added some `colors` for more interactive result.
 - Added `readpage` function to continuously read on a pdf as text.
 - Added `strip` function to unprotect pdf file using the correct password.

@@ -399,17 +399,65 @@ def main():
     # Create group of arguments for usage
     group = parser.add_mutually_exclusive_group(required=True)
 
-    group.add_argument('-c', '--count', metavar='', help='Count the number of pages of the selected pdf file.')
-    group.add_argument('-r', '--read', nargs=2, metavar='', help='Read and prints the pdf page in the terminal. A password is required as fourth argument. ')
-    group.add_argument('-p', '--read-page', dest='readpage', metavar='', help='Creates a session and read the pdf continously on the terminal.')
-    group.add_argument('-a', '--read-all', dest='readall', metavar='', help='Read and prints all page content on the terminal.')
-    group.add_argument('-x', '--extract', metavar='', help='Extracts all text in the pdf file and writes it in a .txt file.')
-    group.add_argument('-t', '--check-crypt', dest='checkcrypt', metavar='', help='Check if the file is encrypted.')
-    group.add_argument('-b', '--extract-binary', dest='extbinary', metavar='', help='Extracts pdf binaries to work with.')
-    group.add_argument('-e', '--encrypt', metavar='', help='Encrypts an unencrypted pdf file with a desired password.')
-    group.add_argument('-d', '--decrypt', metavar='', nargs=2, help='Performs a brute force attack to the pdf file using a password list as fourth argument.')
-    group.add_argument('-s', '--strip', metavar='', nargs=2, help='Strips the password on the pdf file. A password is required as fourth argument.')
+    group.add_argument(
+        '-c', '--count',
+        metavar='',
+        help='Count the number of pages of the selected pdf file.')
+
+    group.add_argument(
+        '-r', '--read',
+        nargs=2,
+        metavar='',
+        help='Read and prints the pdf page in the terminal. A password is required as fourth argument. ')
+
+    group.add_argument(
+        '-p', '--read-page',
+        dest='readpage', metavar='',
+        help='Creates a session and read the pdf continously on the terminal.')
+
+    group.add_argument(
+        '-a', '--read-all',
+        dest='readall',
+        metavar='',
+        help='Read and prints all page content on the terminal.')
+
+    group.add_argument(
+        '-x', '--extract',
+        metavar='',
+        help='Extracts all text in the pdf file and writes it in a .txt file.')
+
+    group.add_argument(
+        '-t', '--check-crypt',
+        dest='checkcrypt',
+        metavar='',
+        help='Check if the file is encrypted.')
+
+    group.add_argument(
+        '-b', '--extract-binary',
+        dest='extbinary',
+        metavar='',
+        help='Extracts pdf binaries to work with.')
+
+    group.add_argument(
+        '-e', '--encrypt',
+        metavar='',
+        help='Encrypts an unencrypted pdf file with a desired password.')
+
+    group.add_argument(
+        '-d', '--decrypt',
+        metavar='',
+        nargs=2,
+        help='Performs a brute force attack to the pdf file using a password list as fourth argument.')
+
+    group.add_argument(
+        '-s', '--strip',
+        metavar='',
+        nargs=2,
+        help='Strips the password on the pdf file. A password is required as fourth argument.')
+
     args = parser.parse_args()
+
+    # Check for parsed arguments
 
     if args.count:
         count(args.count)

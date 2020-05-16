@@ -103,6 +103,8 @@ Sample of readpage function as reading session inside the pdf file
 
 
 ---
-### LICENSE
+### LICENSING
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Licensed under ![MIT License](LICENSE)
+
+© Copyright War Torrente x catx0rr

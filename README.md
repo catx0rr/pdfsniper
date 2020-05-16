@@ -105,6 +105,6 @@ Sample of readpage function as reading session inside the pdf file
 ---
 ### LICENSING
 
-Licensed under ![MIT License](LICENSE)
+Licensed under [MIT License](LICENSE)
 
-© Copyright War Torrente x catx0rr
+© Copyright War Torrente 

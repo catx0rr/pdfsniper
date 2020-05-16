@@ -2,6 +2,7 @@
 
 ## Extract | Crack | Encrypt | Read 
 
+
 ---
 
 ## NOTES
@@ -47,10 +48,12 @@ As of 14/05/2020
 
 ```strip  -- Strips the password on the pdf file. A password is needed in fourth argument.```
 
+
 ---
 
 ### BUGFIX
 - `IndexError` on readpage and read functions
+- Bug where after getting into last page on `readpage` it will go endlessly telling that a page is not found.
 
 ---
 
@@ -67,6 +70,7 @@ SEE: Issues on these pages.
 
 stackoverflow:
 - [Stackoverflow Algorithm code 1 and 2](https://stackoverflow.com/questions/50751267/only-algorithm-code-1-and-2-are-supported)
+
 
 ---
 
@@ -90,8 +94,15 @@ Password has been decrypted using a well known dictionary
 Sample of readpage function as reading session inside the pdf file
 ![extracted sample](https://github.com/catx0rr/python-scripts/blob/master/pdfsniper/images/readpage.PNG)
 
+
 ---
 
 ### FUTURE UPDATES 
 
 ~~Will add a password remover so the text can be extracted on the pdf file.~~ Done.
+
+
+---
+### LICENSE
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

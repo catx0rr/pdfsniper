@@ -138,7 +138,8 @@ def read_page(file):
                         continue
 
                 except IndexError:
-                    print('%s Page %s not found.' % (FAILED, page))
+                    print('%s Page %s not found. Terminating session..' % (FAILED, page))
+                    break
 
     except pdftotext.Error:
         print('%s Unable to read %s Please check if the file is encrypted.' % (FAILED, file))
